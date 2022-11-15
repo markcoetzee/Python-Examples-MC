@@ -1,0 +1,8 @@
+from pytube import YouTube
+# https://pytube.io/en/latest/user/install.html
+
+item = YouTube("")
+# Options: item.length, item.rating, item.title, item.views
+
+item = item.streams.get_highest_resolution()
+item.download()
